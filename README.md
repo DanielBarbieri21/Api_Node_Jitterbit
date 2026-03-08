@@ -37,7 +37,28 @@ npm run dev
 npm start
 ```
 
+- **Com Docker** (API + PostgreSQL):
+
+```bash
+docker compose up -d
+```
+
 A API ficará disponível em `http://localhost:3000` (ou na porta definida em `PORT`).
+
+### Documentação (Swagger)
+
+Acesse `http://localhost:3000/api-docs` para a documentação interativa da API.
+
+### Testes
+
+```bash
+npm test
+```
+
+### Segurança
+
+- **Helmet** – headers HTTP seguros
+- **Rate limiting** – 100 requisições por 15 minutos por IP
 
 ### Endpoints
 
